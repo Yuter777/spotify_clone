@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { ScaleLoader } from "react-spinners";
 import time from "../assets/time.svg";
-import Footer from "../components/Footer";
+import MusicFooter from "../components/Footer";
 import playMusicIcon from "../assets/playMusicIcon.svg";
 import pauseMusic from "../assets/pauseMusic.svg";
 import DownLoad from "../assets/DownLoad.svg";
@@ -354,7 +354,7 @@ function Muisc() {
         </div>
       </div>
 
-      <Footer
+      <MusicFooter
         isPlaying={isPlaying}
         handleMusic={handleMusic}
         audioRef={audioRef}
