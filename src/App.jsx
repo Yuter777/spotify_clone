@@ -7,7 +7,7 @@ import Layout from "./layouts/Layout";
 import { useEffect } from "react";
 import { getToken } from "./components/utils";
 import ErrorPage from "./pages/ErrorPage";
-import Footer from "./components/Footer";
+
 
 function App() {
   useEffect(() => {
