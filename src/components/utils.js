@@ -1,11 +1,11 @@
 async function getToken() {
-  const ClientID = "9e31c7998af24c249dd0343a267813f3";
-  const ClientSecret = "14c82920bd5d4b6ea44ca08d1b51c50e";
   const resp = await fetch(import.meta.env.VITE_API_TOKEN_URL, {
     method: "POST",
     headers: {
       "Content-type": "application/x-www-form-urlencoded",
-      Authorization: `Basic ${btoa(ClientID + ":" + ClientSecret)}`,
+      Authorization: `Basic ${btoa(
+        import.meta.env.VITE_CLIENT_ID + ":" + import.meta.env.VITE_SECRET_KEY
+      )}`,
     },
     body: "grant_type=client_credentials",
   });
