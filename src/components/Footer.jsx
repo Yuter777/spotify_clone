@@ -64,7 +64,7 @@ function Footer({
                 className="w-[75px] h-[75px] mr-4 albussm object-fill"
               />
             ) : (
-              <div className="w-[75px] h-[75px] mr-4 albussm bg-gray-500"></div>
+              <div className="w-[75px] h-[75px] mr-4 albussm bg-gray-500"></div> // placeholder for no album cover
             )}
             <div className="text-white">
               <h3 className="text-lg">{currentTrack.name}</h3>
@@ -120,6 +120,7 @@ function Footer({
               style={{ width: `${progress}%` }}
             ></div>
           </div>
+         
         </div>
       </div>
     </div>
